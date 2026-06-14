@@ -3,23 +3,17 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import pluginReact from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
-import { defineConfig } from 'eslint/config';
+import {defineConfig} from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
   {
     files: ['**/*.{js,mjs,ts,jsx,tsx}'],
-    plugins: { js, 'react-hooks': reactHooks, 'react-refresh': reactRefresh },
+    plugins: {js, 'react-hooks': reactHooks, 'react-refresh': reactRefresh},
     extends: ['js/recommended'],
-    languageOptions: { globals: globals.browser },
-    eslintConfigPrettier,
+    languageOptions: {globals: globals.browser},
     rules: {
-      quotes: ['error', 'single'],
-      semi: ['error', 'always'],
-      'comma-dangle': ['error', 'always-multiline'],
-      'object-curly-spacing': ['error', 'never'],
-      'array-bracket-spacing': ['error', 'never'],
       'no-multi-spaces': 'error',
       'prefer-const': 'error',
       'no-var': 'error',
@@ -31,4 +25,5 @@ export default defineConfig([
   },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  eslintConfigPrettier,
 ]);
