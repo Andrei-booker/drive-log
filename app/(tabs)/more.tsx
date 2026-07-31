@@ -1,12 +1,12 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const Insights = () => {
+const More = () => {
   return (
     <View>
-      <Text>Insights</Text>
+      <Text>More</Text>
     </View>
   );
 };
 
-export default Insights;
+export default More;
