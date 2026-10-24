@@ -2,7 +2,11 @@ export const colors = {
   background: '#0c1420',
   border: '#ffffff14',
   primary: '#3b82f6',
-  bayView: '#6b7fa0',
+  secondary: '#6b7fa0',
+  white: '#fff',
+  addButtonUpLeftInactive: '#1e3a5f',
+  addButtonDownRightInactive: '#1e2f48',
+  addButtonActive: '#2563eb',
 };
 
 export const spacing = {
@@ -25,13 +29,19 @@ export const spacing = {
   16: 64,
   17: 68,
   18: 72,
+  19: 76,
+  20: 80,
+  21: 84,
+  22: 88,
 };
 
 export const components = {
   tabBar: {
     height: spacing[18],
     horizontalInset: spacing[0],
-    iconFrame: spacing[12],
+    iconFrame: spacing[6],
     itemPaddingVertical: spacing[2],
+    addButtonSize: spacing[12],
+    addButtonBorderRadius: spacing[4],
   },
 };
