@@ -4,11 +4,14 @@ import { colors, components } from '@/constants/theme';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Tabs, usePathname } from 'expo-router';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Pressable } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
 const tabBar = components.tabBar;
 
 const TabLayout = () => {
+  const { t } = useTranslation();
   const insets = useSafeAreaInsets();
   const pathname = usePathname();
 
@@ -55,7 +58,7 @@ const TabLayout = () => {
             key={tab.name}
             name={tab.name}
             options={{
-              title: tab.title,
+              title: t(`${tab.title}.title`),
               tabBarButton: ({ onPress }) => {
                 const focused = pathname === '/add';
 
@@ -106,7 +109,7 @@ const TabLayout = () => {
             key={tab.name}
             name={tab.name}
             options={{
-              title: tab.title,
+              title: t(`${tab.title}.title`),
               tabBarIcon: ({ focused }) => <TabIcon focused={focused} icon={tab.icon} />,
             }}
           />
