@@ -5,16 +5,17 @@ const en = {
       cancel: 'Cancel',
     },
     home: {
-      title: 'Home',
+      title: 'Dashboard',
+      tabTitle: 'Home',
     },
     journal: {
-      title: 'Journal',
+      tabTitle: 'Journal',
     },
     stats: {
-      title: 'Stats',
+      tabTitle: 'Stats',
     },
     more: {
-      title: 'More',
+      tabTitle: 'More',
     },
   },
 };

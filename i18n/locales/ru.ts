@@ -5,16 +5,17 @@ const ru = {
       cancel: 'Отменить',
     },
     home: {
-      title: 'Главная',
+      title: 'Обзор',
+      tabTitle: 'Главная',
     },
     journal: {
-      title: 'Журнал',
+      tabTitle: 'Журнал',
     },
     stats: {
-      title: 'Статистика',
+      tabTitle: 'Статистика',
     },
     more: {
-      title: 'Еще',
+      tabTitle: 'Еще',
     },
   },
 };
