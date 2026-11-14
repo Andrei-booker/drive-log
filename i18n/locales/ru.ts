@@ -5,7 +5,7 @@ const ru = {
       cancel: 'Отменить',
     },
     home: {
-      title: 'Обзор',
+      title: 'Главная',
       tabTitle: 'Главная',
     },
     journal: {
