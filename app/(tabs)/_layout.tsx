@@ -58,7 +58,7 @@ const TabLayout = () => {
             key={tab.name}
             name={tab.name}
             options={{
-              title: t(`${tab.title}.title`),
+              title: t(`${tab.title}.tabTitle`),
               tabBarButton: ({ onPress }) => {
                 const focused = pathname === '/add';
 
@@ -109,7 +109,7 @@ const TabLayout = () => {
             key={tab.name}
             name={tab.name}
             options={{
-              title: t(`${tab.title}.title`),
+              title: t(`${tab.title}.tabTitle`),
               tabBarIcon: ({ focused }) => <TabIcon focused={focused} icon={tab.icon} />,
             }}
           />

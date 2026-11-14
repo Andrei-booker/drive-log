@@ -6,15 +6,16 @@ const ru = {
     },
     home: {
       title: 'Главная',
+      tabTitle: 'Главная',
     },
     journal: {
-      title: 'Журнал',
+      tabTitle: 'Журнал',
     },
     stats: {
-      title: 'Статистика',
+      tabTitle: 'Статистика',
     },
     more: {
-      title: 'Еще',
+      tabTitle: 'Еще',
     },
   },
 };
